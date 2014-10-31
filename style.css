@@ -1,0 +1,574 @@
+/*
+Theme Name: Park_College.
+Theme URI:  
+Authors Name: G.M.Nazmul Hossain Somrat.
+Authors URI:  www.somrat.info
+Version:1.0
+Description: This is a responsive wordpress theme.
+*/
+* {margin:0;padding:0}
+body {font-family:arial;font-size:14px;line-height:18px;color:#444;}
+
+a {text-decoration:none;color:#000}
+a:hover {text-decoration:none}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;margin-bottom:0px;}
+img {border:none;max-width:100%}
+input[type=text], textarea {border:1px solid #ddd;padding:0px}
+input[type=submit] {border:none;padding:5px 15px;background:#444;color:#fff;}
+ul, ol {margin:15px;margin-right:0}
+.fix {overflow:hidden}
+.alignleft {float:left;margin-right:10px}
+.alignright {float:right;margin-left:10px}
+.aligncenter {display:block;margin:0 auto}
+.floatleft {float:left}
+.floatright {float:right}
+.column {transition: all 0.9s ease 0s;-moz-transition: all 0.9s ease 0s;-webkit-transition: all 0.9s ease 0s;-o-transition: all 0.9s ease 0s;}
+p{text-align:justify;}
+.mainmenu {min-height:35px}
+#nav ul {display: none;margin:0;z-index:9999;list-style:none}
+#nav li:hover > ul {display: block;}
+#nav {border-radius: 10px; list-style: none; position: relative; display: inline-table;}
+#nav:after {content: ""; clear: both; display: block;	}
+#nav li {border-right: 1px solid #ccc;float: left;}
+#nav li:last-child{border-right: 0px solid #ccc}
+#nav li:hover {}
+#nav li:hover a {}
+#nav li a {color: black;display: block;padding: 0px 15px;font-size: 12px;font-weight:bold;text-transform: uppercase;position: relative;text-decoration: none;z-index: 99999;}
+#nav li a span { text-transform: lowercase;font-style:normal}
+#nav ul {background: #f1f1f1; border-radius: 0px; padding: 0; position: absolute; top: 100%;}
+#nav ul li {float: none; border-bottom: 1px solid #ddd; position: relative;border-right: 0px solid #ddd;}
+#nav ul li a {color: #666;min-width: 160px;padding: 17px 30px 20px;text-transform: none;}	
+#nav ul li a:hover {color:000;}
+#nav ul ul {position: absolute; left: 100%; top:0;}
+.coloumn{
+width:1000px;
+margin:0 auto;
+}
+.header{
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+height:189px;
+}
+.main_content_archive{
+width:600px;
+border:1px dotted #ddd;padding:20px;
+}
+.header_top{background:#209B60;color:white;padding:10px;}
+.header_top a{color:white;}
+.header_top_left{}
+.header_top_right{padding-right:0px;}
+.phone_icon{
+background: url("images/telephone.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+padding-left:23px;
+padding-right:20px;
+}
+.email_icon{
+background: url("images/email.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+padding-right:20px;
+padding-left:23px;
+}
+.header_top_right li{
+list-style:none;
+float:left;
+}
+
+.header_mid{
+background:#FFFFFF;}
+.header_mid_logo{padding:30px;}
+.header_mid_logo_others{color:green;}
+.header_mid_social{padding:30px;}
+.header_menu{}
+.mainmenu li a{padding:17px 30px 20px;}
+.header_menu_main{}
+.header_menu_search{}
+.header_menu_search input[type=text]{
+   font-size: 12px;
+    height: 32px;
+    padding: 0 8px;
+    width: 116px;
+	border-radius: 5px;
+    font-family: inherit;
+    font-weight: 400;
+	border: 3px solid #D2D2CD;
+	
+}
+.header_menu_search input[type=text]:hover{
+border: 3px solid #182BD7;
+
+}
+
+.header_menu_search input[type=button]{background:#7C8E8B;
+
+background: -moz-linear-gradient(center top , #F7F7F7 0px, #F1F1EE 7%, #DDDDDD 75%, #CAC7CA 100%) repeat scroll 0 0 #F1F1EE;
+border-color: #CDCDC6 #CDCDC6 #B2AFB4;
+border-image: none;
+border-style: solid;
+border-width: 1px;
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+color: #636360;
+height: 34px;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+padding:4px 14px;
+margin-right:5px;
+border: 0 none;
+border-radius: 6px;
+cursor: pointer;
+display: inline-block;
+font: 700 13px/24px sans-serif;
+outline: 0 none;
+padding: 5px 14px 3px;
+white-space: nowrap;
+}
+.header_menu_search input[type=button]:hover{
+background:#D3E2E0;
+}
+.header_menu_search input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+.header_menu_search input::-webkit-search-decoration,
+.header_menu_search input::-webkit-search-cancel-button {
+	display: none;
+}
+.header_menu_search input[type=search]{
+background:#ededed url(images/search_icon.png) no-repeat 9px center;
+border:solid 1px #ccc;
+padding : 9px 10px 9px 32px;
+width:55px;
+-webkit-border-radius:10em;
+-moz-border-radius:10em;
+border-radius:10em;
+-webkit-transition:all .5s;
+-moz-transition:all .5s;
+transition:all .5s;
+}
+.header_menu_search input[type=search]:focus{
+width:130px;
+background-color:#fff;
+border-color:#6dcff6;
+-webkit-box-shadow:0 0 5px rgba(109,207,246,.5);
+-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+box-shadow: 0 0 5px rgba(109,207,246,.5);
+
+}
+.slider{margin-top: -15px;}
+.slide_show{}
+.nivoSlider {
+ height: 450px;
+  width:950px;
+  padding: 0px;
+}
+.menu ul{list-style:none;display:block;}
+.content{border:1px dotted #ddd;width:1000px;}
+.left_sidebar{
+border:1px dotted #ddd;
+padding:20px;width:220px;
+}
+.course_finder{margin-bottom:20px;}
+.header_3{
+background:#209B60;
+color: #FFFFFF;
+font-size: 14px;
+margin: 0 0 25px ;
+padding: 10px;
+}
+.news_letter{margin-bottom:20px;}
+.flicker_stream{margin-bottom:20px;}
+.main_content{border:1px dotted #ddd;padding:20px;width:434px;}
+.news{margin-bottom:20px;}
+.news_content{
+margin-bottom: 30px;
+border-bottom: 1px dotted #ddd;
+padding-bottom: 25px;
+}
+.news_pick_img{float:left;width:70px;}
+.news_pick_des{float:right;width:500px;}
+.news_pick_des h3{margin-bottom:10px;}
+.video_tour{margin-bottom:20px;}
+.right_sidebar{border:1px dotted #ddd;padding:20px;width:219px;}
+.quick_link{margin-bottom:20px;}
+.quick_link_menu{}
+.quick_link_menu ul{
+list-style: decimal-leading-zero outside none;
+padding-left: 18px;
+}
+.quick_link_menu ul li{margin-bottom:6px;}
+.quick_link_menu ul li a{}
+.quick_link_menu ul li a:hover{}
+.events{margin-bottom:20px;}
+.events_content{margin-bottom:25px;}
+.events_img{width:60px;float:left;}
+.events_des{width:152px;float:right;}
+.sponsors{margin-bottom:20px;}
+.footer{background: none repeat scroll 0 0 #034B29;}
+.footer_top{}
+.footer_area{background:#034B29;width:1000px;margin:0 auto;}
+.header_3_footer{color:#fff;}
+.header_3_footer h3{margin-bottom:10px;}
+.about_us{
+margin-right: 0;
+padding: 20px 15px;
+width: 220px;
+color:#FFFFFF;
+}
+.about_us a {
+color:#FFFFFF;
+}
+.about_us p{color: #FFFFFF;
+font-size: 14px;
+line-height: 160%;
+margin-top: 18px;
+padding-left:20px 10px;
+}
+.course_finder input[type="text"]{
+margin-bottom: 10px;
+padding: 5px;
+}
+.news_letter input[type="text"]{
+margin-top:10px;
+margin-bottom: 10px;
+padding: 5px;
+}
+.tag{padding:10px;width:200px;margin-right:15px;}
+.tag p{color: #FFFFFF;
+    font-size: 14px;
+    line-height: 160%;}
+.date{margin-bottom:10px;}
+.twitter_feed{padding:10px;width:200px;}
+.twitter_feed p{color: #FFFFFF;
+    font-size: 14px;
+    line-height: 160%;}
+.recent_post{padding:10px;width:200px;}
+.recent_post p{color: #FFFFFF;
+    font-size: 14px;
+    line-height: 160%;}
+.footer_bottom{
+background: none repeat scroll 0 0 #198752;
+color: #FFFFFF;
+height: 10px;
+padding: 25px;
+text-align: center;
+}
+.footer_head_border{border-bottom:3px solid #209B60;width:50px;}
+.footer_content{}
+.menu_second{
+margin-top:20px;
+border-right: 1px dotted;
+float: left;
+height: 147px;
+width: 199px;
+text-align: center;
+-webkit-transition: background-color .1s ease-out;
+  -moz-transition: background-color .1s ease-out;
+  -o-transition: background-color .1s ease-out;
+  transition: background-color .1s ease-out;
+}
+.menu_second img{padding-top: 27px;text-align:center;}
+.menu_second p{
+padding-top: 15px;
+text-align: center;
+color: #fff;
+}
+.second_menu_background1{
+background:#209B60;
+}
+.second_menu_background2{
+background:#198752;
+}
+.second_menu_background3{
+background: #107243;
+}
+.second_menu_background4{
+background: #065F34;
+}
+.second_menu_background5{
+background: #034B29;
+}
+.menu_second:hover{
+  cursor: pointer;
+  margin-top:-18px;
+  height:185px;
+}
+#cssmenu {
+  background: #4cb6ea;
+  margin-bottom: 20px;
+  width: auto;
+  padding: 0px;
+  line-height: 1;
+  display: block;
+  position: relative;
+  font-family: 'PT Sans', sans-serif;
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+#cssmenu ul:after {
+  content: ' ';
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+#cssmenu ul li a {
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+#cssmenu ul li ul {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+#cssmenu ul li ul li {
+  max-height: 0;
+  position: absolute;
+  -webkit-transition: max-height 0.4s ease-out;
+  -moz-transition: max-height 0.4s ease-out;
+  -ms-transition: max-height 0.4s ease-out;
+  -o-transition: max-height 0.4s ease-out;
+  transition: max-height 0.4s ease-out;
+  background: #ffffff;
+}
+#cssmenu ul li ul li.has-sub:after {
+  display: block;
+  position: absolute;
+  content: '';
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: #000000;
+  z-index: 1;
+  top: 13px;
+  right: 15px;
+}
+#cssmenu ul li ul li.has-sub:before {
+  display: block;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  border: 3px solid transparent;
+  border-left-color: #ffffff;
+  z-index: 2;
+  top: 15px;
+  right: 15px;
+}
+#cssmenu ul li ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+  color: #000000;
+  letter-spacing: 0;
+  display: block;
+  width: 140px;
+  padding: 11px 10px 11px 20px;
+}
+#cssmenu ul li ul li:hover > a,
+#cssmenu ul li ul li.active > a {
+  color: #4cb6ea;
+}
+#cssmenu ul li ul li:hover:after,
+#cssmenu ul li ul li.active:after {
+  background: #4cb6ea;
+}
+#cssmenu ul li ul li:hover > ul {
+  left: 170px;
+  top: 0;
+}
+#cssmenu ul li ul li:hover > ul > li {
+  max-height: 72px;
+  position: relative;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu > ul > li:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  z-index: 0;
+  background: #ffffff;
+  -webkit-transition: height .2s;
+  -moz-transition: height .2s;
+  -ms-transition: height .2s;
+  -o-transition: height .2s;
+  transition: height .2s;
+}
+#cssmenu > ul > li.has-sub > a {
+  padding-right: 40px;
+}
+#cssmenu > ul > li.has-sub > a:after {
+  display: block;
+  content: '';
+  background: #ffffff;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  border-radius: 13px;
+  right: 14px;
+  top: 16px;
+}
+#cssmenu > ul > li.has-sub > a:before {
+  display: block;
+  content: '';
+  border: 4px solid transparent;
+  border-top-color: #4cb6ea;
+  z-index: 2;
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 16px;
+  top: 21px;
+}
+#cssmenu > ul > li > a {
+  color: #ffffff;
+  padding: 15px 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  z-index: 2;
+  position: relative;
+}
+#cssmenu > ul > li:hover:after,
+#cssmenu > ul > li.active:after {
+  height: 100%;
+}
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li.active > a {
+  color: #000000;
+}
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li.active > a:after {
+  background: #000000;
+}
+#cssmenu > ul > li:hover > a:before,
+#cssmenu > ul > li.active > a:before {
+  border-top-color: #ffffff;
+}
+#cssmenu > ul > li:hover > ul {
+  left: 0;
+}
+#cssmenu > ul > li:hover > ul > li {
+  max-height: 72px;
+  position: relative;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  #cssmenu > ul {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.35s ease-out;
+    -moz-transition: max-height 0.35s ease-out;
+    -ms-transition: max-height 0.35s ease-out;
+    -o-transition: max-height 0.35s ease-out;
+    transition: max-height 0.35s ease-out;
+  }
+  #cssmenu > ul.open {
+    max-height: 1000px;
+    border-top: 1px solid rgba(110, 110, 110, 0.25);
+  }
+  #cssmenu ul {
+    width: 100%;
+  }
+  #cssmenu ul > li {
+    float: none;
+  }
+  #cssmenu ul li a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 20px;
+  }
+  #cssmenu ul > li:after {
+    display: none;
+  }
+  #cssmenu ul li.has-sub > a:after,
+  #cssmenu ul li.has-sub > a:before,
+  #cssmenu ul li ul li.has-sub:after,
+  #cssmenu ul li ul li.has-sub:before {
+    display: none;
+  }
+  #cssmenu ul li ul,
+  #cssmenu ul li ul li ul,
+  #cssmenu ul li ul li:hover > ul {
+    left: 0;
+    position: relative;
+  }
+  #cssmenu ul li ul li,
+  #cssmenu ul li:hover > ul > li {
+    max-height: 999px;
+    position: relative;
+    background: none;
+  }
+  #cssmenu ul li ul li a {
+    padding: 8px 20px 8px 35px;
+    color: #ffffff;
+    width: auto;
+  }
+  #cssmenu ul li ul ul li a {
+    padding: 8px 20px 8px 50px;
+  }
+  #cssmenu ul li ul li:hover > a {
+    color: #000000;
+  }
+  #cssmenu #menu-button {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  #cssmenu #menu-button:after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    right: 20px;
+    top: 16px;
+  }
+  #cssmenu #menu-button:before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #ffffff;
+    right: 20px;
+    top: 26px;
+  }
+}
